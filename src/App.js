@@ -14,7 +14,6 @@ const App = () => {
     getData();
   }, []);
   
-  // API call to open weather map
   const getData = async (currentCity) => {
     try {
       setItems(await getApiData());
