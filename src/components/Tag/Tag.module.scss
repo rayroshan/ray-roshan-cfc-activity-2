@@ -1,0 +1,38 @@
+@import "../../styles/colors.scss";
+
+.tag {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0; 
+    flex-wrap: wrap;
+
+    &__item {
+        list-style: none;
+        border: 1px solid $gainsboro;
+        min-width: 140px;
+        padding:10px;
+        text-align: center;
+        margin-bottom: 15px;
+        border-radius: 4px;
+
+        &__active {
+            background-color: $primary;
+            color:$white;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: $primary;
+            color:$white;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tag {
+        li {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import "../../styles/colors.scss";
+
+.item {
+  border: 1px solid $gainsboro;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 4px;
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__details {
+    margin-top:15px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $gainsboro;
+        padding:10px 0;
+
+        &:last-child {
+            border:none;
+            padding-bottom:0;
+        }
+
+        > div {
+            margin-right: 10px;
+        }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $secondary;
+    color: $white;
+  }
+}
